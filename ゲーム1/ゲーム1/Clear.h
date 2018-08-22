@@ -8,6 +8,10 @@ public:
 	Clear();
 	~Clear();
 
+	void Draw() 
+	{
+
+	}
 	void UpData();
 private:
 };

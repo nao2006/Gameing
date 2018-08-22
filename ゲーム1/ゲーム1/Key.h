@@ -6,18 +6,21 @@ public:
 	~Key();
 
 	// インスタンス変数の取得
-	static Key* Get(void) {
+	static Key* Get(void) 
+	{
 		return instance;
 	}
 	// インスタンス
-	static void Create(void) {
+	static void Create(void) 
+	{
 		if (instance == nullptr)
 		{
 			instance = new Key();
 		}
 	}
 	// 破棄
-	static void Destroy(void) {
+	static void Destroy(void) 
+	{
 		if (instance != nullptr)
 		{
 			delete instance;

@@ -2,9 +2,12 @@
 class Scene
 {
 public:
-	Scene();
-	virtual ~Scene();
+	Scene() {
+	}
+	virtual ~Scene() {
+	}
 
+	virtual void Draw() = 0;
 	virtual void UpData() = 0;
 };
 

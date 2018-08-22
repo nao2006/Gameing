@@ -4,11 +4,13 @@
 //コンストラクタ
 End::End()
 {
+
 }
 
 //デストラクタ
 End::~End()
 {
+
 }
 
 void End::UpData()

@@ -5,29 +5,35 @@
 //コンストラクタ
 Player::Player()
 {
-	x = 0;
-	y = 0;
+	size = { 200,200 };
+	hp = 5;
 }
 
 //デストラクタ
 Player::~Player()
 {
+
 }
 
 void Player::Draw()
 {
-	DrawBox(x, y, 200+x, 200+y, GetColor(255, 0, 0), true);
+	DrawBox(pos.x, pos.y, pos.x + size.x, pos.y + size.y, GetColor(255, 0, 0), true);
 }
 
 void Player::UpData()
 {
 	if (Key::Get()->CheckKey(KEY_INPUT_RIGHT))
 	{
-		++x;
+		pos.x++;
 	}
 	else if (Key::Get()->CheckKey(KEY_INPUT_LEFT))
 	{
-		--x;
+		pos.x--;
+	}
+
+	if (Key::Get()->CheckTrigger(KEY_INPUT_A))
+	{
+		--hp;
 	}
 }
 

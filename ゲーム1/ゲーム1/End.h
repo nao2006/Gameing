@@ -7,6 +7,10 @@ public:
 	End();
 	~End();
 
+	void Draw() 
+	{
+
+	}
 	void UpData();
 private:
 };

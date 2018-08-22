@@ -120,7 +120,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Character.cpp" />
     <ClCompile Include="Clear.cpp" />
     <ClCompile Include="End.cpp" />
     <ClCompile Include="Key.cpp" />
@@ -130,8 +129,8 @@
       <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <ClCompile Include="Over.cpp" />
+    <ClCompile Include="Play.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Title.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +140,7 @@
     <ClInclude Include="Key.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Over.h" />
+    <ClInclude Include="Play.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Title.h" />

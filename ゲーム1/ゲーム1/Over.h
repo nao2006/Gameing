@@ -7,6 +7,9 @@ public:
 	Over();
 	 ~Over();
 
+	 void Draw() {
+
+	 }
 	 void UpData();
 
 private:
