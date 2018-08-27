@@ -2,9 +2,13 @@
 class Scene
 {
 public:
-	Scene() {
+	Scene() 
+	{
+
 	}
-	virtual ~Scene() {
+	virtual ~Scene() 
+	{
+
 	}
 
 	virtual void Draw() = 0;

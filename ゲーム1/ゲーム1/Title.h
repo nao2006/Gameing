@@ -8,7 +8,8 @@ public:
 	Title();
 	~Title();
 
-	void Draw() {
+	void Draw() 
+	{
 
 	}
 	void UpData();

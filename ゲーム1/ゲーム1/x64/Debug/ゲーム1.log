@@ -1,0 +1,10 @@
+﻿  Title.cpp
+  Player.cpp
+  Play.cpp
+  Over.cpp
+  main.cpp
+  Key.cpp
+  End.cpp
+  Clear.cpp
+  コードを生成中...
+LINK : fatal error LNK1104: ファイル 'DxDrawFunc_vs2015_x64_d.lib' を開くことができません。

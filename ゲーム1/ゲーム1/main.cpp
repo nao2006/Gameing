@@ -22,7 +22,7 @@ int GameSystemInit()
 
 void Draw()
 {
-
+	
 }
 
 void UpData()
