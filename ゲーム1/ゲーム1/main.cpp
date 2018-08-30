@@ -1,6 +1,6 @@
+#include "DxLib.h"
 #include "main.h"
 #include "Key.h"
-#include "DxLib.h"
 #include "Title.h"
 #include "Play.h"
 #include "Clear.h"
@@ -9,6 +9,7 @@
 #include<iostream>
 
 int winflag = 0;
+int bgimage ;
 
 int GameSystemInit()
 {
@@ -20,6 +21,7 @@ int GameSystemInit()
 	return 0;
 }
 
+
 void Draw()
 {
 	
@@ -27,6 +29,7 @@ void Draw()
 
 void UpData()
 {
+	
 	DrawString(250, 250, "ƒƒCƒ“", GetColor(255, 0, 0));
 }
 
@@ -45,6 +48,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	over = new Over();
 	end = new End();
 
+	bgimage = LoadGraph("image/haikei.jpg");
+
 	while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) != 1)
 	{
 		Key::Get()->UpData();
@@ -53,7 +58,9 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 		switch (mode)
 		{
 		case GAME_TITLE:
+			DrawGraph(25, 25, bgimage, true);
 			title->UpData();
+
 			if (Key::Get()->CheckTrigger(KEY_INPUT_SPACE))
 			{
 				mode = GAME_MAIN;

@@ -4,14 +4,16 @@
 //コンストラクタ
 Title::Title()
 {
+
 }
 
 //デストラクタ
 Title::~Title()
 {
+
 }
 
 void Title::UpData()
 {
-	DrawString(250, 250, "タイトル", GetColor(255, 0, 0));
+	DrawString(250, 250, "タイトル", GetColor(0, 0, 0));
 }

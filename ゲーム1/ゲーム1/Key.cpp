@@ -21,6 +21,7 @@ void Key::UpData(void)
 	memcpy(&old[0], &key[0], sizeof(old));
 
 	GetHitKeyStateAll(key);
+	GetJoypadInputState(DX_INPUT_KEY);
 }
 
 // ƒL[“ü—Í

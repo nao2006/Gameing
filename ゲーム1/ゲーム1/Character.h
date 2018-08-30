@@ -3,11 +3,14 @@
 class Character
 {
 public:
-	Character() {
+	Character() 
+	{
 		pos = {};
 		hp = 0;
+
 	}
-	virtual ~Character() {
+	virtual ~Character() 
+	{
 
 	}
 

@@ -6,6 +6,7 @@
 int GameSystemInit();
 
 
+
 GAME_MODE mode;
 
 // *Å©É|ÉCÉìÉ^
