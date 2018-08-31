@@ -6,6 +6,7 @@ Key* Key::instance = nullptr;
 //コンストラクタ
 Key::Key()
 {
+	//メモリーセット
 	memset(&key[0], 0, sizeof(key));
 	memset(&old[0], 0, sizeof(old));
 }
@@ -13,6 +14,7 @@ Key::Key()
 //デストラクタ
 Key::~Key()
 {
+
 }
 
 // 処理
@@ -21,13 +23,12 @@ void Key::UpData(void)
 	memcpy(&old[0], &key[0], sizeof(old));
 
 	GetHitKeyStateAll(key);
-	GetJoypadInputState(DX_INPUT_KEY);
 }
 
 // キー入力
 bool Key::CheckKey(int key)
 {
-	if (this->key[key])
+	if (this->key[key])	
 	{
 		return true;
 	}
@@ -45,3 +46,5 @@ bool Key::CheckTrigger(int key)
 
 	return false;
 }
+
+

@@ -38,6 +38,7 @@ public:
 	// トリガーキー
 	bool CheckTrigger(int key);
 
+
 private:
 	Key();
 

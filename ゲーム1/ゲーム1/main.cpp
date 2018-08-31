@@ -70,7 +70,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 			UpData();
 			play->Draw();
 			play->UpData();
-
+			
 			/*if (player->GetHp() <= 0)
 			{
 				mode = GAME_OVER;
