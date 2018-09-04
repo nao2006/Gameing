@@ -23,22 +23,36 @@ Player::~Player()
 
 void Player::Draw()
 {
+	//static int flam = 3;
+	////‰E‰æ‘œ(6,7,8)
+	//static int index = 11;
+	//DrawRectGraph(pos.x, pos.y, 
+	//	size.x * (index % 3), size.y * (index / 3) , 
+	//	size.x , size.y , val,TRUE, FALSE);
+	////DrawBox(pos.x, pos.y, pos.x + size.x, pos.y + size.y, GetColor(255, 0, 0), true);
+	////DeleteGraph(val);
+	//++flam;
+	//if (flam >= 7)
+	//{
+	//	index = (index + 1) < 11 ? ++index : 0;
+	//	flam = 0;
+	//}
+
 	static int flam = 3;
 
-	//‰E‰æ‘œ(6,7,8)
-	static int index = 11;
-	DrawRectGraph(pos.x, pos.y, 
-		size.x * (index % 3), size.y * (index / 3) , 
-		size.x , size.y , val,TRUE, FALSE);
+	static int animindex = 11;
 
-	//DrawBox(pos.x, pos.y, pos.x + size.x, pos.y + size.y, GetColor(255, 0, 0), true);
-	//DeleteGraph(val);
-	++flam;
-	if (flam >= 7)
+	DrawRectGraph(pos.x, pos.y, 
+				  size.x * (animindex % 3), size.y * (animindex / 3), 
+				  size.x, size.y, val, TRUE, FALSE);
+
+	flam++;
+	if (flam >=  7)
 	{
-		index = (index + 1) < 11 ? ++index : 0;
+		animindex = (animindex + 1) < 11 ? ++animindex: 0;
 		flam = 0;
 	}
+
 }
 
 void Player::UpData()
