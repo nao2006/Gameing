@@ -24,5 +24,13 @@ protected:
 	Pos size;
 	int hp;
 
+	enum Dir
+	{
+		LEFT,
+		RIGHT,
+		UNDEL,
+
+	};
+
 };
 

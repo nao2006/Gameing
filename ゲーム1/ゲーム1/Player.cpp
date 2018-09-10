@@ -11,6 +11,7 @@ Player::Player()
 	size = { 48,48 };
 	pos = {98, 100};
 	hp = 5;
+	
 	val = LoadGraph("image/ヴァルキリー.png");
 
 }
@@ -18,7 +19,7 @@ Player::Player()
 //デストラクタ
 Player::~Player()
 {
-
+	
 }
 
 void Player::Draw()
@@ -62,6 +63,7 @@ void Player::UpData()
 
 	if (Key::Get()->CheckKey(KEY_INPUT_RIGHT))
 	{
+		
 		pos.x++;
 	}
 	else if (Key::Get()->CheckKey(KEY_INPUT_LEFT))
@@ -74,4 +76,5 @@ void Player::UpData()
 		--hp;
 	}
 }
+
 

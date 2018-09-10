@@ -10,6 +10,8 @@ public:
 
 	void Draw();
 	void UpData();
+	
+	
 
 	int GetHp(void) const 
 	{
