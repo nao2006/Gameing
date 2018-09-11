@@ -11,7 +11,7 @@ Player::Player()
 	size = { 48,48 };
 	pos = {98, 100};
 	hp = 5;
-	
+	dir = DOWN;
 	val = LoadGraph("image/ƒ”ƒ@ƒ‹ƒLƒŠ[.png");
 
 }
@@ -44,7 +44,7 @@ void Player::Draw()
 	static int animindex = 11;
 
 	DrawRectGraph(pos.x, pos.y, 
-				  size.x * (animindex % 3), size.y * (animindex / 3), 
+				  size.x * (animindex % 3), size.y * dir, 
 				  size.x, size.y, val, TRUE, FALSE);
 
 	flam++;
@@ -63,11 +63,12 @@ void Player::UpData()
 
 	if (Key::Get()->CheckKey(KEY_INPUT_RIGHT))
 	{
-		
+		dir = RIGHT;
 		pos.x++;
 	}
 	else if (Key::Get()->CheckKey(KEY_INPUT_LEFT))
 	{
+		dir = LEFT;
 		pos.x--;
 	}
 

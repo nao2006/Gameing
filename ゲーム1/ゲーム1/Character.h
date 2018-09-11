@@ -26,11 +26,11 @@ protected:
 
 	enum Dir
 	{
+		DOWN,
 		LEFT,
 		RIGHT,
-		UNDEL,
-
-	};
+		UP
+	}dir;
 
 };
 
