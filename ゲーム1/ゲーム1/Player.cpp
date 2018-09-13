@@ -19,7 +19,7 @@ Player::Player()
 //デストラクタ
 Player::~Player()
 {
-	
+	dir = RIGHT;
 }
 
 void Player::Draw()
@@ -70,6 +70,17 @@ void Player::UpData()
 	{
 		dir = LEFT;
 		pos.x--;
+	}
+
+	if (Key::Get()->CheckKey(KEY_INPUT_UP))
+	{
+		dir = UP;
+		pos.y--;
+	}
+	else if (Key::Get()->CheckKey(KEY_INPUT_DOWN))
+	{
+		dir = DOWN;
+		pos.y++;
 	}
 
 	if (Key::Get()->CheckTrigger(KEY_INPUT_A))
