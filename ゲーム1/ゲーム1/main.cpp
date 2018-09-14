@@ -10,6 +10,7 @@
 
 int winflag = 0;
 int bgimage ;
+int haiekiimage;
 
 int GameSystemInit()
 {
@@ -24,12 +25,12 @@ int GameSystemInit()
 
 void Draw()
 {
-	
+	haiekiimage =LoadGraph("image/karihaikei.jpg");
 }
 
 void UpData()
 {
-	
+	haiekiimage = LoadGraph("image/karihaikei.jpg");
 	DrawString(250, 250, "ƒƒCƒ“", GetColor(255, 0, 0));
 }
 
@@ -67,6 +68,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 			}
 			break;
 		case GAME_MAIN:
+			DrawGraph(0, 0, haiekiimage, true);
 			UpData();
 			play->Draw();
 			play->UpData();

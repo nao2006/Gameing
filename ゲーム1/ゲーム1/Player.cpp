@@ -19,7 +19,7 @@ Player::Player()
 //デストラクタ
 Player::~Player()
 {
-	dir = RIGHT;
+	
 }
 
 void Player::Draw()
