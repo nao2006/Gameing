@@ -1,2 +1,10 @@
-﻿  main.cpp
-  ゲーム1.vcxproj -> C:\Users\1601277\Documents\GitHub\Gameing\ゲーム1\Debug\ゲーム1.exe
+﻿  Clear.cpp
+  End.cpp
+  Key.cpp
+  Over.cpp
+  Play.cpp
+  Player.cpp
+  Title.cpp
+  コードを生成中...
+  main.cpp
+  ゲーム1.vcxproj -> C:\Users\1601277\Documents\GitHub\Game\ゲーム1\Debug\ゲーム1.exe
