@@ -1,8 +1,2 @@
-﻿Over.obj : error LNK2019: 未解決の外部シンボル @__CheckForDebuggerJustMyCode@4 が関数 "public: __thiscall Over::Over(void)" (??0Over@@QAE@XZ) で参照されました。
-Play.obj : error LNK2001: 外部シンボル "@__CheckForDebuggerJustMyCode@4" は未解決です。
-Title.obj : error LNK2001: 外部シンボル "@__CheckForDebuggerJustMyCode@4" は未解決です。
-Clear.obj : error LNK2001: 外部シンボル "@__CheckForDebuggerJustMyCode@4" は未解決です。
-End.obj : error LNK2001: 外部シンボル "@__CheckForDebuggerJustMyCode@4" は未解決です。
-Key.obj : error LNK2001: 外部シンボル "@__CheckForDebuggerJustMyCode@4" は未解決です。
-main.obj : error LNK2001: 外部シンボル "@__CheckForDebuggerJustMyCode@4" は未解決です。
-C:\Users\1601277\Documents\GitHub\Gameing\ゲーム1\Debug\ゲーム1.exe : fatal error LNK1120: 1 件の未解決の外部参照
+﻿  Player.cpp
+  ゲーム1.vcxproj -> C:\Users\1601277\Documents\GitHub\Game\ゲーム1\Debug\ゲーム1.exe
