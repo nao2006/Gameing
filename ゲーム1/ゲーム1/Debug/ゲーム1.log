@@ -1,5 +1,4 @@
-﻿  Player.cpp
-Over.obj : error LNK2019: 未解決の外部シンボル @__CheckForDebuggerJustMyCode@4 が関数 "public: __thiscall Over::Over(void)" (??0Over@@QAE@XZ) で参照されました。
+﻿Over.obj : error LNK2019: 未解決の外部シンボル @__CheckForDebuggerJustMyCode@4 が関数 "public: __thiscall Over::Over(void)" (??0Over@@QAE@XZ) で参照されました。
 Play.obj : error LNK2001: 外部シンボル "@__CheckForDebuggerJustMyCode@4" は未解決です。
 Title.obj : error LNK2001: 外部シンボル "@__CheckForDebuggerJustMyCode@4" は未解決です。
 Clear.obj : error LNK2001: 外部シンボル "@__CheckForDebuggerJustMyCode@4" は未解決です。
