@@ -1,10 +1,12 @@
 #include "Player.h"
 #include "Key.h"
+#include "Typedef.h"
 #include "DxLib.h"
 
 int val;
 //int GetJoypadInputState(DX_INPUT_KEY_PAD1);
 
+//一回しか判定しない時に
 //コンストラクタ
 Player::Player()
 {
@@ -24,21 +26,7 @@ Player::~Player()
 
 void Player::Draw()
 {
-	//static int flam = 3;
-	////右画像(6,7,8)
-	//static int index = 11;
-	//DrawRectGraph(pos.x, pos.y, 
-	//	size.x * (index % 3), size.y * (index / 3) , 
-	//	size.x , size.y , val,TRUE, FALSE);
-	////DrawBox(pos.x, pos.y, pos.x + size.x, pos.y + size.y, GetColor(255, 0, 0), true);
-	////DeleteGraph(val);
-	//++flam;
-	//if (flam >= 7)
-	//{
-	//	index = (index + 1) < 11 ? ++index : 0;
-	//	flam = 0;
-	//}
-
+	
 	static int flam = 3;
 
 	static int animindex = 11;
@@ -86,5 +74,29 @@ void Player::UpData()
 	if (Key::Get()->CheckTrigger(KEY_INPUT_A))
 	{
 		--hp;
+	}
+
+	//右　制限
+	if (pos.x >= SCREEN_SIZE_X - size.x)
+	{
+		pos.x = SCREEN_SIZE_X - size.x;
+	}
+
+	//左制限
+	if (pos.x <= 0)
+	{
+		pos.x = 0;
+	}
+
+	//下制限
+	if (pos.y >= SCREEN_SIZE_Y - size.y)
+	{
+		pos.y = SCREEN_SIZE_Y - size.y;
+	}
+
+	//上制限
+	if (pos.y <= 0)
+	{
+		pos.y = 0;
 	}
 }
