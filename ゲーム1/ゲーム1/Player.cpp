@@ -15,7 +15,8 @@ Player::Player()
 	hp = 5;
 	dir = RIGHT;
 	val = LoadGraph("image/ヴァルキリー.png");
-
+	flam = 0;
+	animindex = 0;
 }
 
 //デストラクタ
@@ -26,16 +27,13 @@ Player::~Player()
 
 void Player::Draw()
 {
-	
-	static int flam = 3;
-
-	static int animindex = 11;
 
 	DrawRectGraph(pos.x, pos.y, 
 				  size.x * (animindex % 3), size.y * dir, 
 				  size.x, size.y, val, TRUE, FALSE);
 
 	flam++;
+
 	if (flam >=  7)
 	{
 		animindex = (animindex + 1) < 11 ? ++animindex: 0;
@@ -99,4 +97,7 @@ void Player::UpData()
 	{
 		pos.y = 0;
 	}
+
+	//スクロール
+
 }

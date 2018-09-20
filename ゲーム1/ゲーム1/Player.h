@@ -23,5 +23,7 @@ public:
 	}
 
 private:
+	int flam;
+	int animindex;
 };
 

@@ -122,6 +122,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="camera.cpp" />
     <ClCompile Include="Clear.cpp" />
     <ClCompile Include="End.cpp" />
     <ClCompile Include="Key.cpp" />
@@ -136,6 +137,7 @@
     <ClCompile Include="Title.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="camera.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Clear.h" />
     <ClInclude Include="End.h" />
