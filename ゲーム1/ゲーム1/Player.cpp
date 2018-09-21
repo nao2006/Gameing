@@ -99,5 +99,5 @@ void Player::UpData()
 	}
 
 	//ƒXƒNƒ[ƒ‹
-
+	
 }

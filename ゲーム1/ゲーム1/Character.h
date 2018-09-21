@@ -1,5 +1,7 @@
 #pragma once
 #include "Vector2.h"
+#include "Typedef.h"
+
 class Character
 {
 public:
@@ -7,7 +9,6 @@ public:
 	{
 		pos = {};
 		hp = 0;
-
 	}
 	virtual ~Character() 
 	{
@@ -19,18 +20,28 @@ public:
 	// èàóù
 	virtual void UpData(void) = 0;
 
+	//ç¿ïWÇÃéÊìæ
+	Pos GetPos(void) 
+	{
+		return pos;
+	}
+	Pos GetLocalPos(void)
+	{
+		return lpos;
+	}
+
+	void SetLocalPos(Pos pos)
+	{
+		lpos = pos;
+	}
+
 protected:
 	Pos pos;
+	Pos lpos;
 	Pos size;
 	int hp;
-
-	enum Dir
-	{
-		DOWN,
-		LEFT,
-		RIGHT,
-		UP
-	}dir;
+	DIR dir;
+	
 
 };
 

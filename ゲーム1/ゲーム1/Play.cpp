@@ -1,9 +1,11 @@
 #include "Play.h"
 #include "Player.h"
+#include "camera.h"
 
 Play::Play()
 {
 	pl = new Player();
+	cam = new Camera(pl);
 }
 
 Play::~Play()
@@ -18,5 +20,6 @@ void Play::Draw()
 
 void Play::UpData()
 {
+	cam->Updata();
 	pl->UpData();
 }

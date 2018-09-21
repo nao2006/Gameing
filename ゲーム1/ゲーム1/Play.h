@@ -2,6 +2,7 @@
 #include "Scene.h"
 
 class Player;
+class Camera;
 
 class Play :
 	public Scene
@@ -15,5 +16,6 @@ public:
 
 private:
 	Player * pl;
+	Camera* cam;
 };
 

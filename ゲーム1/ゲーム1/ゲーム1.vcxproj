@@ -123,6 +123,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="Character.cpp" />
     <ClCompile Include="Clear.cpp" />
     <ClCompile Include="End.cpp" />
     <ClCompile Include="Key.cpp" />

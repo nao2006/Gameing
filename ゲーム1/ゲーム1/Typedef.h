@@ -3,6 +3,14 @@
 #define SCREEN_SIZE_X 640
 #define SCREEN_SIZE_Y 480
 
+enum DIR
+{
+	DOWN,
+	LEFT,
+	RIGHT,
+	UP
+};
+
 //ÉQÅ[ÉÄÉÇÅ[Éh
 typedef enum
 {

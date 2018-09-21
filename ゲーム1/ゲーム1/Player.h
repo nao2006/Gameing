@@ -1,5 +1,6 @@
 #pragma once
 #include "Character.h"
+#include <DxLib.h>
 
 class Player : 
 	public Character
@@ -11,8 +12,6 @@ public:
 	void Draw();
 	void UpData();
 	
-	
-
 	int GetHp(void) const 
 	{
 		return hp;
@@ -21,7 +20,8 @@ public:
 	{
 		this->hp = hp;
 	}
-
+	
+	 
 private:
 	int flam;
 	int animindex;
