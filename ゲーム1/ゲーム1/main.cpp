@@ -6,11 +6,11 @@
 #include "Clear.h"
 #include "Over.h"
 #include "End.h"
+#include "BackGround.h"
 #include<iostream>
 
 int winflag = 0;
-int bgimage ;
-int haiekiimage;
+int bgimage;
 
 int GameSystemInit()
 {
@@ -22,15 +22,14 @@ int GameSystemInit()
 	return 0;
 }
 
-
 void Draw()
 {
-	haiekiimage =LoadGraph("image/karihaikei.jpg");
+	
 }
 
 void UpData()
 {
-	haiekiimage = LoadGraph("image/karihaikei.jpg");
+	
 	DrawString(250, 250, "ƒƒCƒ“", GetColor(255, 0, 0));
 }
 
@@ -48,6 +47,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	clear = new Clear();
 	over = new Over();
 	end = new End();
+	background = new BackGround();
 
 	bgimage = LoadGraph("image/haikei.jpg");
 
@@ -68,7 +68,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 			}
 			break;
 		case GAME_MAIN:
-			DrawGraph(0, 0, haiekiimage, true);
+			background->Draw();
 			UpData();
 			play->Draw();
 			play->UpData();

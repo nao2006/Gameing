@@ -12,6 +12,7 @@ Player::Player()
 {
 	size = { 48,48 };
 	pos = {98, 100};
+	lpos = pos;
 	hp = 5;
 	dir = RIGHT;
 	val = LoadGraph("image/ÉîÉ@ÉãÉLÉäÅ[.png");
@@ -28,7 +29,7 @@ Player::~Player()
 void Player::Draw()
 {
 
-	DrawRectGraph(pos.x, pos.y, 
+	DrawRectGraph(lpos.x, lpos.y, 
 				  size.x * (animindex % 3), size.y * dir, 
 				  size.x, size.y, val, TRUE, FALSE);
 

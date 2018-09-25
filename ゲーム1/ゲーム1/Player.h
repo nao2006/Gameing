@@ -16,6 +16,7 @@ public:
 	{
 		return hp;
 	}
+
 	void SetHp(int hp) 
 	{
 		this->hp = hp;

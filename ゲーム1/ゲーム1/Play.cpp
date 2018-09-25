@@ -5,7 +5,9 @@
 Play::Play()
 {
 	pl = new Player();
-	cam = new Camera(pl);
+	cam = new Camera();
+
+	cam->SetPl(pl);
 }
 
 Play::~Play()

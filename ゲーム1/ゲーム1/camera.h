@@ -4,8 +4,13 @@
 class Camera
 {
 public:
-	Camera(Player* player);
+	Camera();
 	~Camera();
+
+	// フォーカスをセット
+	void SetPl(Player* pl) {
+		this->player = pl;
+	}
 	
 	void Updata();
 	
