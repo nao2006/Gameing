@@ -8,11 +8,12 @@ public:
 	~Camera();
 	
 	void Updata();
-	
+	int scrollX;	//スクロールX座標]
+
 private:
 	Player* player;
 	int tmpX;
-	int scrollX;	//スクロールX座標
+	
 	int baseRight;	//画面右のスクロール開始位置
 };
 

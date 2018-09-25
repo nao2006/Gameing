@@ -6,6 +6,7 @@
 #include "Clear.h"
 #include "Over.h"
 #include "End.h"
+#include "camera.h"
 #include<iostream>
 
 int winflag = 0;
@@ -48,6 +49,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	clear = new Clear();
 	over = new Over();
 	end = new End();
+
 
 	bgimage = LoadGraph("image/haikei.jpg");
 
