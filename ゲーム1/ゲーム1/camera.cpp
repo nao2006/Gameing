@@ -23,6 +23,7 @@ void Camera::Updata()
 	{
 		tmpX = player->GetLocalPos().x - baseRight;
 		scrollX += tmpX;
+		//background->Draw();
 	}
 	DrawLine(baseRight, 0, baseRight, SCREEN_SIZE_Y, 0xff0000, true);
 }

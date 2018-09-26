@@ -15,9 +15,10 @@ BackGround::~BackGround()
 
 void BackGround::Draw()
 {
-	DrawGraph(pos.x, pos.y, BackImage,true);
+	DrawGraph(pos.x--, pos.y, BackImage,true);
 }
 
 void BackGround::Updata()
 {
+
 }
