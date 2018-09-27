@@ -1,8 +1,7 @@
+#pragma once
 #include "Player.h"
-#include "Character.h"
-#include "BackGround.h"
 
-class Camera
+class Camera 
 {
 public:
 	Camera();
@@ -12,19 +11,20 @@ public:
 	void SetPl(Player* pl) {
 		this->player = pl;
 	}
-	
-	void SetBg(BackGround * bg)
-	{
-		this->background = bg;
+
+	Pos GetPos(void) const {
+		return pos;
 	}
 
+
+
 	void Updata();
-	
+
 private:
 	Player* player;
-	BackGround* background;
 	int tmpX;
 	int scrollX;	//スクロールX座標
 	int baseRight;	//画面右のスクロール開始位置
-};
 
+	Pos pos;
+};

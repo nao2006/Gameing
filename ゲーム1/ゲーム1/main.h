@@ -16,7 +16,6 @@ Scene* play;
 Scene* clear;
 Scene* over;
 Scene* end;
-BackGround* background;
 
 void Draw();
 void UpData();

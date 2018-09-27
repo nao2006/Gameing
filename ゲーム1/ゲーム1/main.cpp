@@ -3,6 +3,7 @@
 #include "Key.h"
 #include "Title.h"
 #include "Play.h"
+#include "Player.h"
 #include "Clear.h"
 #include "Over.h"
 #include "End.h"
@@ -47,7 +48,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	clear = new Clear();
 	over = new Over();
 	end = new End();
-	background = new BackGround();
+
 
 	bgimage = LoadGraph("image/haikei.jpg");
 
@@ -68,7 +69,6 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 			}
 			break;
 		case GAME_MAIN:
-			background->Draw();
 			UpData();
 			play->Draw();
 			play->UpData();

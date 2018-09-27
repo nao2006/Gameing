@@ -3,6 +3,7 @@
 
 class Player;
 class Camera;
+class BackGround;
 
 class Play :
 	public Scene
@@ -13,9 +14,12 @@ public:
 
 	void Draw();
 	void UpData();
+	
+	
 
 private:
 	Player * pl;
 	Camera* cam;
+	BackGround* bg;
 };
 
