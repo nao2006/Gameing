@@ -76,10 +76,10 @@ void Player::UpData()
 	}
 
 	//âEÅ@êßå¿
-	if (pos.x >= SCREEN_SIZE_X - size.x)
+	/*if (pos.x >= SCREEN_SIZE_X - size.x)
 	{
 		pos.x = SCREEN_SIZE_X - size.x;
-	}
+	}*/
 
 	//ç∂êßå¿
 	if (pos.x <= 0)
