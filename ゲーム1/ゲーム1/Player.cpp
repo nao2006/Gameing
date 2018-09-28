@@ -12,6 +12,7 @@ Player::Player()
 {
 	size = { 48,48 };
 	pos = {98, 100};
+	lpos = pos;
 	hp = 5;
 	dir = RIGHT;
 	val = LoadGraph("image/ƒ”ƒ@ƒ‹ƒLƒŠ[.png");

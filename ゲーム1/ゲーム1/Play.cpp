@@ -5,7 +5,10 @@
 Play::Play()
 {
 	pl = new Player();
-	cam = new Camera(pl);
+	cam = new Camera();
+	bg = new BackGround();
+	cam->SetPl(pl);
+	bg->SetPlayer(pl);
 }
 
 Play::~Play()
@@ -15,11 +18,16 @@ Play::~Play()
 
 void Play::Draw()
 {
+	bg->Draw();
 	pl->Draw();
+	
 }
 
 void Play::UpData()
 {
+
 	cam->Updata();
 	pl->UpData();
+	bg->Updata();
+	
 }

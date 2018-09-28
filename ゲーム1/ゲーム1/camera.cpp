@@ -1,17 +1,17 @@
 #include "camera.h"
 #include "DxLib.h"
 #include "Character.h"
+#include "BackGround.h"
 
-Camera::Camera(Player* player)
+Camera::Camera()
 {
-	this->player = player;
 	baseRight = 540;
-	scrollX = 0;
+	scrollX = 100;
 }
 
 Camera::~Camera()
 {
-
+	delete player;
 }
 
 void Camera::Updata()
@@ -23,8 +23,8 @@ void Camera::Updata()
 	{
 		tmpX = player->GetLocalPos().x - baseRight;
 		scrollX += tmpX;
+		//background->Draw();
 	}
-	
 	DrawLine(baseRight, 0, baseRight, SCREEN_SIZE_Y, 0xff0000, true);
 }
 
