@@ -8,7 +8,7 @@ public:
 	Title();
 	~Title();
 
-	void Draw() 
+	void Draw()
 	{
 
 	}
@@ -16,4 +16,3 @@ public:
 
 private:
 };
-

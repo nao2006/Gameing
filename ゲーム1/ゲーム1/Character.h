@@ -5,12 +5,12 @@
 class Character
 {
 public:
-	Character() 
+	Character()
 	{
 		pos = {};
 		hp = 0;
 	}
-	virtual ~Character() 
+	virtual ~Character()
 	{
 
 	}
@@ -21,7 +21,7 @@ public:
 	virtual void UpData(void) = 0;
 
 	//À•W‚Ìæ“¾
-	Pos GetPos(void) 
+	Pos GetPos(void)
 	{
 		return pos;
 	}
@@ -41,7 +41,7 @@ protected:
 	Pos size;
 	int hp;
 	DIR dir;
-	
+
 
 };
 

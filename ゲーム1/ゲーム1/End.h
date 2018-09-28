@@ -7,7 +7,7 @@ public:
 	End();
 	~End();
 
-	void Draw() 
+	void Draw()
 	{
 
 	}

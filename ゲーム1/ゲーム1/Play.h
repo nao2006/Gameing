@@ -14,12 +14,9 @@ public:
 
 	void Draw();
 	void UpData();
-	
-	
 
 private:
 	Player * pl;
 	Camera* cam;
 	BackGround* bg;
 };
-

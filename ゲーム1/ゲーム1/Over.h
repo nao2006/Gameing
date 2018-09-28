@@ -5,12 +5,12 @@ class Over :
 {
 public:
 	Over();
-	 ~Over();
+	~Over();
 
-	 void Draw() {
+	void Draw() {
 
-	 }
-	 void UpData();
+	}
+	void UpData();
 
 private:
 };

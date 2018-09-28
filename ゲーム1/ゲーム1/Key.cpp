@@ -28,7 +28,7 @@ void Key::UpData(void)
 // ƒL[“ü—Í
 bool Key::CheckKey(int key)
 {
-	if (this->key[key])	
+	if (this->key[key])
 	{
 		return true;
 	}

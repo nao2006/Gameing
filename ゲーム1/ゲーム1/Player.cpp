@@ -11,7 +11,7 @@ int val;
 Player::Player()
 {
 	size = { 48,48 };
-	pos = {98, 100};
+	pos = { 98, 100 };
 	lpos = pos;
 	hp = 5;
 	dir = RIGHT;
@@ -23,21 +23,21 @@ Player::Player()
 //デストラクタ
 Player::~Player()
 {
-	
+
 }
 
 void Player::Draw()
 {
 
-	DrawRectGraph(lpos.x, lpos.y, 
-				  size.x * (animindex % 3), size.y * dir, 
-				  size.x, size.y, val, TRUE, FALSE);
+	DrawRectGraph(lpos.x, lpos.y,
+		size.x * (animindex % 3), size.y * dir,
+		size.x, size.y, val, TRUE, FALSE);
 
 	flam++;
 
-	if (flam >=  7)
+	if (flam >= 7)
 	{
-		animindex = (animindex + 1) < 11 ? ++animindex: 0;
+		animindex = (animindex + 1) < 11 ? ++animindex : 0;
 		flam = 0;
 	}
 
@@ -76,10 +76,10 @@ void Player::UpData()
 	}
 
 	//右　制限
-	if (pos.x >= SCREEN_SIZE_X - size.x)
+	/*if (pos.x >= SCREEN_SIZE_X - size.x)
 	{
 		pos.x = SCREEN_SIZE_X - size.x;
-	}
+	}*/
 
 	//左制限
 	if (pos.x <= 0)
@@ -100,5 +100,5 @@ void Player::UpData()
 	}
 
 	//スクロール
-	
+
 }

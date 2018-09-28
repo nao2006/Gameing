@@ -25,12 +25,12 @@ int GameSystemInit()
 
 void Draw()
 {
-	
+
 }
 
 void UpData()
 {
-	
+
 	DrawString(250, 250, "ƒƒCƒ“", GetColor(255, 0, 0));
 }
 
@@ -56,7 +56,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	{
 		Key::Get()->UpData();
 		ClsDrawScreen();
-	
+
 		switch (mode)
 		{
 		case GAME_TITLE:
@@ -72,7 +72,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 			UpData();
 			play->Draw();
 			play->UpData();
-			
+
 			/*if (player->GetHp() <= 0)
 			{
 				mode = GAME_OVER;
@@ -80,13 +80,13 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 			break;
 		case GAME_CLEAR:
 			clear->UpData();
-			
+
 			break;
 		case GAME_OVER:
 			over->UpData();
-			
+
 			break;
-		
+
 		default:
 			DrawString(250, 250, "‚—‚—‚—", GetColor(255, 0, 0));
 			break;
