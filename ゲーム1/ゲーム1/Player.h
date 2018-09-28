@@ -1,5 +1,6 @@
 #pragma once
 #include "Character.h"
+#include <DxLib.h>
 
 class Player : 
 	public Character

@@ -48,9 +48,12 @@
     <ClCompile Include="BackGround.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Enemy.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+=======
+>>>>>>> parent of f5856bf... Merge branch 'master' of https://github.com/nao2006/Gameing
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -95,8 +98,11 @@
     <ClInclude Include="BackGround.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Enemy.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+=======
+>>>>>>> parent of f5856bf... Merge branch 'master' of https://github.com/nao2006/Gameing
   </ItemGroup>
 </Project>
