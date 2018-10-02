@@ -16,12 +16,16 @@ Camera::~Camera()
 
 void Camera::Updata()
 {
+	//プレイヤーのゲットポス(x)が640/2以上だったら
 	if (player->GetPos().x >= 640 / 2)
 	{
 		pos.x = player->GetPos().x - 640 / 2;
 	}
+
+	//スクロール
 	player->SetLocalPos({ player->GetPos().x - pos.x, player->GetPos().y });
-	////ローカル座標を計算
+	
+	//ローカル座標を計算
 	//player->SetLocalPos({ player->GetPos().x - scrollX, player->GetPos().y + scrollX});
 
 	//if (player->GetLocalPos().x>= baseRight)
