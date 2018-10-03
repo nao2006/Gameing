@@ -11,5 +11,9 @@ public:
 
 	void Draw();
 	void UpData();
+
+private:
+	int flam;
+	int animindex;
 };
 

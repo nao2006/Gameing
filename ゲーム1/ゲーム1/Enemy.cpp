@@ -1,14 +1,17 @@
 #include "Enemy.h"
 #include "Typedef.h"
 #include "DxLib.h"
+#include "Typedef.h"
 
 int Dragon;
-
 Enemy::Enemy()
 {
-	size = {60,60};
-	pos = {0, 0};
+	size = {48,48};
+	pos = {200, 100};
+	hp = 5;
 	Dragon = LoadGraph("image/ƒhƒ‰ƒSƒ“.png");
+	flam = 0;
+	animindex = 0;
 }
 
 Enemy::~Enemy()

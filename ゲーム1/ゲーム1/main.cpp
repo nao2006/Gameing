@@ -73,8 +73,9 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 		case GAME_MAIN:
 			UpData();
 			play->Draw();
-			
 			play->UpData();
+			enemy->Draw();
+			
 
 			/*if (player->GetHp() <= 0)
 			{

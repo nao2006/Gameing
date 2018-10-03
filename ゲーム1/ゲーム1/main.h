@@ -1,12 +1,10 @@
 #pragma once
-
 #include "Scene.h"
 #include "Typedef.h"
 #include "Player.h"
 #include "BackGround.h"
 #include "Enemy.h"
 int GameSystemInit();
-
 
 GAME_MODE mode;
 
