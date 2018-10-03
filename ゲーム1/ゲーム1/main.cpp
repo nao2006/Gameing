@@ -8,6 +8,7 @@
 #include "Over.h"
 #include "End.h"
 #include "BackGround.h"
+#include "Enemy.h"
 #include<iostream>
 
 int winflag = 0;
@@ -45,6 +46,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 	title = new Title();
 	play = new Play();
+	enemy = new Enemy();
 	clear = new Clear();
 	over = new Over();
 	end = new End();
@@ -71,6 +73,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 		case GAME_MAIN:
 			UpData();
 			play->Draw();
+			
 			play->UpData();
 
 			/*if (player->GetHp() <= 0)

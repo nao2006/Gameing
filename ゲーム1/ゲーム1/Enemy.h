@@ -8,5 +8,8 @@ class Enemy :
 public:
 	Enemy();
 	~Enemy();
+
+	void Draw();
+	void UpData();
 };
 
