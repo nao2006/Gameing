@@ -21,7 +21,7 @@ Enemy::~Enemy()
 
 void Enemy::Draw()
 {
-	DrawRectGraph(pos.x, pos.y, size.x, size.y, size.x, size.y, Dragon, true, false);;
+	DrawRectGraph(]pos.x, pos.y, size.x, size.y, size.x, size.y, Dragon, true, false);;
 }
 
 void Enemy::UpData()
