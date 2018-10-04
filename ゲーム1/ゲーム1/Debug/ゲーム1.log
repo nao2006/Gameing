@@ -1,15 +1,2 @@
-﻿  camera.cpp
-  Over.cpp
-  Enemy.cpp
-  コードを生成中...
-  スキップ中... (関連する変更は検出されませんでした)
-  Title.cpp
-  Player.cpp
-  Play.cpp
-  Key.cpp
-  End.cpp
-  Clear.cpp
-  Character.cpp
-  BackGround.cpp
-  main.cpp
-  ゲーム1.vcxproj -> C:\Users\1601277\Documents\GitHub\Gameing\ゲーム1\Debug\ゲーム1.exe
+﻿  Enemy.cpp
+  ゲーム1.vcxproj -> C:\Users\1601277\Documents\GitHub\Game\ゲーム1\Debug\ゲーム1.exe
