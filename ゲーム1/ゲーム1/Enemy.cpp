@@ -7,7 +7,7 @@ int Dragon;
 Enemy::Enemy()
 {
 	size = {48,48};
-	pos = {200, 100};
+	pos = {200, 420};
 	lpos = pos;
 	hp = 5;
 	Dragon = LoadGraph("image/ƒhƒ‰ƒSƒ“.png");

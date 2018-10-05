@@ -11,7 +11,7 @@ int val;
 Player::Player()
 {
 	size = { 48,48 };
-	pos = { 98, 100 };
+	pos = { 98, 420 };
 	lpos = pos;
 	hp = 5;
 	dir = RIGHT;
