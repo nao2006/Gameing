@@ -39,6 +39,6 @@ void Enemy::Draw()
 
 void Enemy::UpData()
 {
-
+	//“–‚½‚è”»’è
 
 }
