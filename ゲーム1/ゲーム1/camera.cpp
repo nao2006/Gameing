@@ -23,7 +23,7 @@ void Camera::Updata()
 	}
 
 	//スクロール
-	player->SetLocalPos({ player->GetPos().x - pos.x, player->GetPos().y });
+	player->SetLocalPos({ player->GetPos().x - pos.x, player->GetPos().y});
 	
 	//ローカル座標を計算
 	//player->SetLocalPos({ player->GetPos().x - scrollX, player->GetPos().y + scrollX});

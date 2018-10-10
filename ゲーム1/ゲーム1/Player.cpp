@@ -99,6 +99,4 @@ void Player::UpData()
 		pos.y = 0;
 	}
 
-	//ƒXƒNƒ[ƒ‹
-
 }
