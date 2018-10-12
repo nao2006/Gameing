@@ -20,6 +20,7 @@ void Camera::Updata()
 	if (player->GetPos().x >= 640 / 2)
 	{
 		pos.x = player->GetPos().x - 640 / 2;
+		
 	}
 
 	//ƒXƒNƒ[ƒ‹
