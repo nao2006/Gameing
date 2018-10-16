@@ -1,5 +1,6 @@
 #include "DxLib.h"
 #include "BackGround.h"
+#include<memory>
 
 int BackImage1;
 int BackImage2;
